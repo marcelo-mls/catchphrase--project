@@ -1,0 +1,81 @@
+.App {
+  background-color: var(--coral-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+  align-items: center;
+}
+
+@media (max-width: 550px) {
+  .App {
+    height: 100vh;
+  }
+
+  header {
+    margin-top: 10px;
+  }
+}
+
+header > button {
+  font-size: 20px;
+  font-family: 'Kalam', cursive;
+  text-align: center;
+  opacity: 75%;
+  background-color: inherit;
+  border: none;
+
+  transition: transform 200ms ease-out;
+}
+
+header > button:hover {
+  cursor: none;
+  transform: scale(1.4);
+  opacity: 100%;
+}
+
+header > img {
+  width: 25px;
+
+  transition: transform 100ms linear;
+}
+
+header > img:hover {
+  width: 25px;
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+footer {
+  font-size: 10px;
+  padding: 10px 0;
+  width: 100vw;
+  text-align: center;
+  opacity: 25%;
+}
+
+footer:hover {
+  opacity: 100%;
+  background-color: var(--coral-color-dark);
+}
+
+.default {
+  background-color: var(--coral-color);
+}
+
+.dark {
+  background-color: var(--dark-color-a);
+  color: white;
+}
+
+.dark > header > button {
+  color: white;
+}

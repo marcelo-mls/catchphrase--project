@@ -1,0 +1,49 @@
+.myWord {
+  color: var(--red-color);
+  background-color: inherit;
+  border: none;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 100px;
+}
+
+@media (max-width: 550px) {
+  .myWord {
+    font-size: 70px;
+  }
+}
+
+.myWord:hover {
+  cursor: pointer;
+}
+
+.myWord:active {
+  cursor: grabbing;
+}
+
+/*
+font-family: 'Dancing Script', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Vibur', cursive;
+*/
+
+.word-dancing {
+  font-family: 'Dancing Script', cursive;
+}
+
+.word-kalam {
+  font-family: 'Kalam', cursive;
+}
+
+.word-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.word-vibur {
+  font-family: 'Vibur', cursive;
+}

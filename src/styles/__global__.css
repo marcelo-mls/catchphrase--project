@@ -1,0 +1,19 @@
+:root {
+  --dark-color-a: #0E131F;
+  --dark-color-b: #6d6875;
+  --red-color: #E05263;
+  --coral-color: #e5989b;
+  --coral-color-dark: #e28d90;
+  --green-color: #C8D6AF;
+  --blue-color: #6B9AC4;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
