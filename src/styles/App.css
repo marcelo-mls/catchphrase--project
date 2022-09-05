@@ -42,14 +42,13 @@ header > button:hover {
   opacity: 100%;
 }
 
-header > img {
-  width: 25px;
+.icons {
+  font-size: 36px;
 
   transition: transform 100ms linear;
 }
 
-header > img:hover {
-  width: 25px;
+.icons:hover {
   cursor: pointer;
   transform: scale(1.15);
 }
@@ -67,15 +66,15 @@ footer:hover {
   background-color: var(--coral-color-dark);
 }
 
-.default {
+.false {
   background-color: var(--coral-color);
 }
 
-.dark {
+.true {
   background-color: var(--dark-color-a);
   color: white;
 }
 
-.dark > header > button {
+.true > header > button {
   color: white;
 }

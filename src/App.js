@@ -6,36 +6,25 @@ import moonIcon from './images/moon.png';
 import { BsSunFill, BsMoonFill, BsGrid } from "react-icons/bs";
 
 function App() {
-  const [screenMode, setScreenMode] = useState('default')
-  const [screenModeIcon, setScreenModeIcon] = useState(moonIcon)
+  const [screenMode, setScreenMode] = useState(false)
 
   const toggleScreenMode = () => {
-    const toggleScreenMode = screenMode === 'default'
-      ? ['dark', sunIcon]
-      : ['default', moonIcon]
-
-    setScreenMode(toggleScreenMode[0])
-    setScreenModeIcon(toggleScreenMode[1])
+    const toggleScreenMode = !screenMode
+    setScreenMode(toggleScreenMode)
   }
 
   return (
     <div className={`App ${screenMode}`}>
       <header>
-        <BsGrid className='icons' style={{ fontSize: '36px' }} />
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/6423/6423878.png"
-          alt="menu"
-        />
+        <BsGrid className='icons' />
         <button>Catchphrase Game</button>
-        <BsMoonFill className='icons' style={{ fontSize: '36px' }} />
-        <BsSunFill className='icons' style={{ fontSize: '36px' }} />
-        <img
-          onClick={toggleScreenMode}
-          src={screenModeIcon}
-          alt="dark mode"
-        />
+        <div className='icons' onClick={toggleScreenMode}>
+          {screenMode === false ? <BsMoonFill /> : <BsSunFill />}
+        </div>
       </header>
+
       <Words />
+
       <footer>
         developed by
         {' '}
