@@ -7,7 +7,7 @@ The objective is to create a <strong>"Catchphrase Game"</strong>, in which the p
 </p>
 
 #### Application Demo:
- ![image](https://cdn-icons-png.flaticon.com/128/2914/2914192.png)
+ ![image](./src/images/demo-gif.gif)
 
 <br />
 
