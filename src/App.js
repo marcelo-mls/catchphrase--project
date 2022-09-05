@@ -1,8 +1,9 @@
 import React from 'react';
 import Words from './components/Words';
 import './styles/App.css';
-import sunIcon from './images/sun.png'
-import moonIcon from './images/moon.png'
+import sunIcon from './images/sun.png';
+import moonIcon from './images/moon.png';
+import { BsSunFill, BsMoonFill, BsGrid } from "react-icons/bs";
 
 // menu: https://cdn-icons-png.flaticon.com/512/6423/6423878.png
 // dark mode: https://cdn-icons-png.flaticon.com/512/702/702471.png
@@ -29,11 +30,14 @@ class App extends React.Component {
     return (
       <div className={ `App ${screenMode}` }>
         <header>
+          <BsGrid className='icons' style={{fontSize: '36px'}}/>
           <img
             src="https://cdn-icons-png.flaticon.com/512/6423/6423878.png"
             alt="menu"
           />
           <button>Catchphrase Game</button>
+          <BsMoonFill className='icons' style={{fontSize: '36px'}}/>
+          <BsSunFill className='icons' style={{fontSize: '36px'}}/>
           <img
             onClick={ this.setScreenMode }
             src={ screenModeIcon }
