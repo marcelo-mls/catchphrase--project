@@ -7,6 +7,11 @@
   height: 100vh;
 }
 
+a:-webkit-any-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 header {
   margin-top: 25px;
   display: flex;

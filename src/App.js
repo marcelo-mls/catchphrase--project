@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import { BsSunFill, BsMoonFill, BsGrid } from "react-icons/bs";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import Words from './components/Words';
 import './styles/App.css';
-import sunIcon from './images/sun.png';
-import moonIcon from './images/moon.png';
-import { BsSunFill, BsMoonFill, BsGrid } from "react-icons/bs";
 
 function App() {
   const [screenMode, setScreenMode] = useState(false)
+
+  const myLinks = {
+    urlLinkedIn: 'https://www.linkedin.com/in/marcelo-mls/',
+    urlGithub: 'https://github.com/marcelo-mls',
+  };
 
   const toggleScreenMode = () => {
     const toggleScreenMode = !screenMode
@@ -15,6 +19,7 @@ function App() {
 
   return (
     <div className={`App ${screenMode}`}>
+
       <header>
         <BsGrid className='icons' />
         <button>Catchphrase Game</button>
@@ -26,15 +31,15 @@ function App() {
       <Words />
 
       <footer>
-        developed by
-        {' '}
-        <a
-          href='https://www.linkedin.com/in/marcelo-mls/'
-          target='_blank'
-          rel='noopener noreferrer'>@marcelo-mls</a>
-        {' '}
-        with React
+        developed by Marcelo Marques
+        <a href={myLinks.urlLinkedIn} target="_blank" rel="noreferrer">
+          <FaLinkedin style={{ fontSize: '16px', padding: '0 4px 0 8px' }} />
+        </a>
+        <a href={myLinks.urlGithub} target="_blank" rel="noreferrer">
+          <FaGithub style={{ fontSize: '16px', padding: '0 8px 0 4px' }} />
+        </a>
       </footer>
+
     </div>
   );
 }
