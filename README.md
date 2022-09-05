@@ -11,7 +11,7 @@ The objective is to create a <strong>"Catchphrase Game"</strong>, in which the p
 
 <br />
 
-The inspiration comes from the game played on "The Tonight Show Starring Jimmy Fallon".
+The inspiration comes from the game played on *"The Tonight Show Starring Jimmy Fallon"*.
 
 <p>
   <a href="https://www.youtube.com/playlist?list=PLykzf464sU9_6d0zR4E2of1z6nFNwJqhr" target="_blank">
